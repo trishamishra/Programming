@@ -1,4 +1,22 @@
 class Test
+{
+    public static void main(String[] args)
+    {
+        int i = 1;
+
+        while (i < 10)
+        {
+            System.out.println("|  " + i + " | " + (char) (i - 1 + 'a') + " |");
+            i++;
+        }
+
+        while (i <= 26)
+        {
+            System.out.println("| " + i + " | " + (char) (i - 1 + 'a') + " |");
+            i++;
+        }
+    }
+}
 
 /*
 
@@ -28,5 +46,7 @@ class Test
 | 24 | x |
 | 25 | y |
 | 26 | z |
+
+c = i +
 
 */
