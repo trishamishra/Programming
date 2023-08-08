@@ -8,29 +8,36 @@ class Test
 
         System.out.print("Enter 5 integers: ");
         int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        int d = sc.nextInt();
-        int e = sc.nextInt();
 
         int greatest = a;
 
-        if (b > greatest)
-            greatest = b;
-        if (c > greatest)
-            greatest = c;
-        if (d > greatest)
-            greatest = d;
-        if (e > greatest)
-            greatest = e;
+        a = sc.nextInt();
 
-        System.out.println(greatest + " is the largest");  
+        if (a > greatest)
+            greatest = a;
+
+        a = sc.nextInt();
+
+        if (a > greatest)
+            greatest = a;
+
+        a = sc.nextInt();
+
+        if (a > greatest)
+            greatest = a;
+
+        a = sc.nextInt();
+
+        if (a > greatest)
+            greatest = a;
+
+        System.out.println(greatest + " is the largest");
     }
 }
 
 /*
 
 Enter 5 integers: 3 1 2 0 3
-3 is the largest 
+3 is the largest
 
  */
