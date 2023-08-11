@@ -6,16 +6,17 @@ class Test
     {
         Scanner sc = new Scanner(System.in);
 
+        int a, b;
         System.out.print("Enter 2 integers: ");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        a = sc.nextInt();
+        b = sc.nextInt();
 
         if (a < b)
             System.out.println(b + " is the larger one");
         else if (a > b)
             System.out.println(a + " is the larger one");
         else
-            System.out.println("They are equal ");
+            System.out.println("They are equal");
     }
 }
 

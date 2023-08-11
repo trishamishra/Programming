@@ -4,8 +4,8 @@ class Test
 {
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);        
-        
+        Scanner sc = new Scanner(System.in);
+
         int a, b;
         System.out.print("Enter 2 integers: ");
         a = sc.nextInt();
@@ -36,10 +36,11 @@ sc.nextInt() is used for integers.
 When using sc.nextInt(),
 (1) all leading (shuru mein aane vaala) whitespace (if any) from the input
     buffer are taken out and thrown away.
-(2) sc.nextInt() stops at the first whitespace character, and all the remaining
-    characters are left in the input buffer.
+(2) sc.nextInt() stops at the first useless character (for eg., whitespace),
+    and all the remaining characters are left in the input buffer.
 
-When the user presses enter, 2 things happen - \n gets inside the input buffer,
-and the cursor moves to the next line.
+When the user presses enter, 2 things happen -
+1. All the typed characters including \n get inside the input buffer
+2. The cursor moves to the next line.
 
 */

@@ -13,7 +13,7 @@ class Test
         System.out.println("* 2        Subtraction    *");
         System.out.println("* 3        Multiplication *");
         System.out.println("* * * * * * * * * * * * * *");
-        
+
         int a, b;
         System.out.print("\nEnter 2 integers: ");
         a = sc.nextInt();
@@ -22,9 +22,9 @@ class Test
         int choice;
         System.out.print("Enter your choice: ");
         choice = sc.nextInt();
-        
+
         if (choice == 1)
-            System.out.println("\n" + a + " + " + b + " = " + (a + b));        
+            System.out.println("\n" + a + " + " + b + " = " + (a + b));
         else if (choice == 2)
             System.out.println("\n" + a + " - " + b + " = " + (a - b));
         else
@@ -34,7 +34,7 @@ class Test
 
 /*
 
-* * * * * * * * * * * * * * 
+* * * * * * * * * * * * * *
 * Choice   Operation      *
 *                         *
 * 1        Addition       *
