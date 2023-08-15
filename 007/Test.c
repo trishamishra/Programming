@@ -16,8 +16,17 @@ int main(void)
     scanf("%d", &b);
 
     int choice;
+    printf("Enter your choice: ");
+    scanf("%d", &choice);
 
+    if (choice == 1)
+        printf("%d + %d = %d\n", a, b, a + b);
 
+    else if (choice == 2)
+        printf("%d - %d = %d\n", a, b, a - b);
+
+    else
+        printf("%d * %d = %d\n", a, b, a * b);
 
     return 0;
 }

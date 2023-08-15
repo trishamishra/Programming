@@ -6,8 +6,9 @@ class Test
     {
         Scanner sc = new Scanner(System.in);
 
+        int year;
         System.out.print("Enter a year: ");
-        int year = sc.nextInt();
+        year = sc.nextInt();
 
         if (year % 4 == 0)
         {
@@ -32,5 +33,5 @@ class Test
 
 Enter a year: 2100
 It is not a leap year
-                                                                    
+
  */

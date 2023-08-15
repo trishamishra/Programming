@@ -6,8 +6,9 @@ class Test
     {
         Scanner sc = new Scanner(System.in);
 
+        int a;
         System.out.print("Enter 5 integers: ");
-        int a = sc.nextInt();
+        a = sc.nextInt();
 
         int greatest = a;
 

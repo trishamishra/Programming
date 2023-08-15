@@ -25,8 +25,10 @@ class Test
 
         if (choice == 1)
             System.out.println("\n" + a + " + " + b + " = " + (a + b));
+
         else if (choice == 2)
             System.out.println("\n" + a + " - " + b + " = " + (a - b));
+
         else
             System.out.println("\n" + a + " * " + b + " = " + (a * b));
     }
