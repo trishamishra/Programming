@@ -13,8 +13,8 @@ class Test
 
         while (i <= ul)
         {
-            ++i;
             System.out.print(i + " ");
+            i++;
         }
 
         System.out.println();

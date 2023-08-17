@@ -2,7 +2,22 @@
 
 int main(void)
 {
-    
+    char a;
+    printf("Enter a character: ");
+    scanf("%c", &a);
+
+    if ((a >= 'a') && (a <= 'z'))
+        printf("%c is a lowercase letter\n", a);
+
+    else if ((a >= 'A') && (a <= 'Z'))
+        printf("%c is an uppercase letter\n", a);
+
+    else if ((a >= '0') && (a <= '9'))
+        printf("%c is a number\n", a);
+
+    else
+        printf("%c is a special character\n", a);
+
     return 0;
 }
 
