@@ -7,28 +7,26 @@ class Test
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter lower and upper limits: ");
-        
+
         int ll = sc.nextInt();
-        if (ll % 2 != 0)
-            ll++;
+        ll = ll + (ll % 2);
 
         int ul = sc.nextInt();
-        if (ul % 2 != 0)
-            ul--;
-        
+        ul = ul - (ul % 2);
+
         if( ll == ul)
-        {   
-            System.out.println(ul);            
+        {
+            System.out.println(ul);
         }
 
         else
-        {   
+        {
             while((ul - ll) != 2)
             {
                 System.out.print(ll + ", ");
                 ll = ll + 2;
             }
-            
+
             System.out.println(ll + " and " + (ll + 2));
         }
     }

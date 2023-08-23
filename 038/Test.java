@@ -9,16 +9,16 @@ class Test
         System.out.print("Enter a positive integer: ");
         int i = sc.nextInt();
         System.out.print(i + " has ");
+
         int count = 0;
 
-        
-        while(i != 0)
+        while (i != 0)
         {
             i = i / 10;
             count++;
         }
+
         System.out.println(count + " digits ");
-        
     }
 }
 
