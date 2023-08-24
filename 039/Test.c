@@ -6,23 +6,37 @@ int main(void)
     printf("Enter a positive integer: ");
     scanf("%d", &number);
 
-    int remainder = number % 10;
-    printf("%d ", remainder);
-    number = number / 10;
-    int sum = remainder;
+    int sum = 0;
+    int extracted_digit;
+    // int extracted_digit = number % 10;
+    // printf("%d ", extracted_digit);
+    // number = number / 10;
+    // int sum = extracted_digit;
 
-    while (number != 0)
+    // while (number % 10 != number)
+
+    while (number > 9)
     {
-        remainder = number % 10;
-        printf("+ %d ", remainder);
+        extracted_digit = number % 10;
+        printf("%d + ", extracted_digit);
         number = number / 10;
-        sum = sum + remainder;
+        sum = sum + extracted_digit;
     }
 
-    printf("= %d\n", sum);
+    // extracted_digit = number % 10;
+    // printf("%d = %d\n", extracted_digit, (sum + extracted_digit));
+
+    printf("%d = %d\n", number, sum + number);
 
     return 0;
 }
+// int extracted_digit = number % 10;
+    // printf("%d ", extracted_digit);
+    // number = number / 10;
+    // int sum = extracted_digit;
+
+    // while (number % 10 != number)
+
 
 /*
 
