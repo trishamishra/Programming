@@ -32,7 +32,9 @@ int main(void)
     }
 
     if (rev == number)
-    
+        printf("%d is a palindrome\n", number);
+    else
+        printf("Bhakk Kushagr bekaar input dene bola\n");
 
     return 0;
 }
