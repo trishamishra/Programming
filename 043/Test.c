@@ -13,6 +13,6 @@ Enter a non-negative integer: 1234
 | 8 | 0 |
 | 9 | 0 |
 
-Note: Solve this problem using switch.
+Note: Solve this problem using if-else and switch.
 
 */
