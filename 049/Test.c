@@ -2,14 +2,14 @@
 
 1)
 Enter a positive integer: 1
-Factors = 1
+1 is neither prime nor composite
 
 2)
 Enter a positive integer: 10
-Factors = 1, 2, 5 and 10
+10 is composite
 
 3)
 Enter a positive integer: 13
-Factors = 1 and 13
+13 is prime
 
 */
