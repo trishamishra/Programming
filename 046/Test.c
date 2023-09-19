@@ -8,27 +8,30 @@ int main(void)
 
     if (number == 1)
     {
-        printf("Factors = %d\n", number);
+        printf("Factors = 1\n");
     }
 
     else
     {
-            int i = 1;
+        printf("1");
 
+        int i = 2;
+
+        while (i < number)
+        {
             if (number % i == 0)
             {
-                while(i < number)
-                {
-                    printf( "%d, ", i);
-                    ++i;
-                }
-                printf(" and %d", i)
+                printf(", %d", i);
+            }
 
+            ++i;
         }
+
+        printf(" and %d\n", number);
+    }
+
     return 0;
-
 }
-
 
 /*
 
