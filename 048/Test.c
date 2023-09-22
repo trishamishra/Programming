@@ -2,20 +2,54 @@
 
 int main(void)
 {
-    int number;
-    printf("Enter a positive integer: ");
-    scanf("%d", &number);
+    int number1, number2;
+    printf("Enter 2 positive integers: ");
+    scanf("%d", &number1);
+    scanf("%d", &number2);
 
-    int starting_point;
-    printf("Enter starting point: ");
-    scanf("%d", &starting_point);
-
-    while (starting_point % number != 0)
+    if (number1 > number2)
     {
-        ++starting_point;
+        int lcm = number1;
+
+        while ((lcm % number1 != 0) || (lcm % number2 != 0))
+        {
+            ++lcm;
+        }
+
+        printf("LCM = %d\n", lcm);
     }
 
-    printf("HCF is: %d", starting_point);
+    else if (number2 > number1)
+    {
+        int lcm = number2;
+
+        while ((lcm % number1 != 0) || (lcm % number2 != 0))
+        {
+            ++lcm;
+        }
+
+        printf("LCM = %d\n", lcm);
+    }
+
+    else
+    {
+        printf("LCM = %d\n", number1);
+    }
+
+    // int number;
+    // printf("Enter a positive integer: ");
+    // scanf("%d", &number);
+
+    // int starting_point;
+    // printf("Enter starting point: ");
+    // scanf("%d", &starting_point);
+
+    // while (starting_point % number != 0)
+    // {
+    //     ++starting_point;
+    // }
+
+    // printf("HCF is: %d", starting_point);
 
     return 0;
 }
