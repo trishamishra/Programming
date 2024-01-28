@@ -10,35 +10,31 @@ int main(void)
 
     while (i <= r)
     {
-        // print i - 1 spaces
+        int c = 1;
 
-        int x = 1;
-
-        while (x <= i - 1)
+        while(c <= i-1)
         {
             printf("  ");
-            ++x;
+            ++c;
         }
 
-        ////////////////////////////////////////////////////
+        int star = 1;
 
-        // print ((r - i) * 2) + 1 stars
-
-        int y = 1;
-
-        while (y <= ((r - i) * 2) + 1)
+        while(star <= (r * 2) - (2 * i) + 1)
         {
             printf("* ");
-            ++y;
+            ++star;
         }
 
-        //////////////////////////////////////////////////
+        // int kushu = 1;
 
-        // print newline
+        // while (kushu <= i - 1)
+        // {
+        //     printf("  ");
+        //     ++kushu;
+        // }
 
         printf("\n");
-
-        ////////////////////////////////////////////////
 
         ++i;
     }

@@ -14,17 +14,18 @@ class Test
 
         System.out.println();
 
-        for (int i = 1; i <= rows; i++)
+        for(int i = 1; i <= rows; i++)
         {
-            for (int j = 1; j <= columns; j++)
+            for(int j = 1; j <= columns; j++)
             {
                 System.out.print("* ");
             }
-
             System.out.println();
         }
+
     }
 }
+
 /*
 
 Enter the number of rows: 3

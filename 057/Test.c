@@ -2,106 +2,64 @@
 
 int main(void)
 {
-    int r;
-    printf("Enter the number of rows (>= 4): ");
-    scanf("%d", &r);
+	int r;
+	printf("Enter the number of rows (>= 4): ");
+	scanf("%d", &r);
 
-    // print first row
+  	int i = 1;
 
-    // print r stars
+  	while (i <= r)
+  	{
+		printf("*");
+		++i;
+  	}
 
-    int x = 1;
+  	printf("\n");
 
-    while (x <= r)
-    {
-        printf("* ");
-        ++x;
-    }
+///////////////////////////////////////////////////////////////////
 
-    // print newline
+  	int y = 1;
 
-    printf("\n");
+	while (y <= r - 2)
+  	{
+		int a = 1;
 
-    //////////////////////////////////////////////////////////////////////////
+		while (a <= y)
+		{
+			printf(" ");
+			++a;
+		}
 
-    // print rows 2 to r - 1
+		printf("*");
 
-    int current_row_number = 2;
+		int aa = 1;
 
-    while (current_row_number <= r - 1)
-    {
-        // print ? spaces
-        int spaces_before_asterisk = 1;
+  		while (aa <= r - 2 - y)
+  		{
+			printf(" ");
+			++aa;
+  		}
 
-        while (spaces_before_asterisk < current_row_number)
-        {
-            printf("  ");
-            ++spaces_before_asterisk;
-        }
+  		printf("*");
 
-        // print 1 star
-        printf("* ");
+		printf("\n");
 
-        ///////////////////////////////////////////////////////////////
+  		++y;
+	}
 
-        // print ? spaces
-        int spaces_after_asterisk = 1;
+/////////////////////////////////////////////////////////////////
 
-        while (spaces_after_asterisk <= r - (current_row_number + 1))
-        {
-            printf("  ");
-            ++spaces_after_asterisk;
-        }
+	int z = 1;
 
-        // print 1 star
-        printf("* ");
+	while (z <= r-1)
+	{
+		printf(" ");
+		++z;
+  	}
 
-        //////////////////////////////////////////////////////////
+	printf("*");
 
-        // print newline
-        printf("\n");
+	printf("\n");
 
-        ///////////////////////////////////////////////////////
-
-        ++current_row_number;
-    }
-
-    //////////////////////////////////////////////////////////////////////////
-
-    // print last row
-
-    // print r - 1 spaces
-
-    int y = 1;
-
-    while (y <= r - 1)
-    {
-        printf("  ");
-        ++y;
-    }
-
-    // print 1 star
-
-    printf("* ");
-
-    // print newline
-
-    printf("\n");
-
-    return 0;
+	return 0;
 }
-
-/*
-Enter the number of rows (>= 4): 5
-
-* * * * *
-  *     *
-    *   *
-      * *
-        *
-11 12 13 14 15
-21 22 23 24 25
-31 32 33 34 35
-41 42 43 44 45
-51 52 53 54 55
-*/

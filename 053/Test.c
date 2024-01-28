@@ -14,23 +14,20 @@ int main(void)
 
     int i = 1;
 
-    while (i <= rows)
+    while(i <= rows)
     {
         int j = 1;
-
         while (j <= columns)
         {
             printf("* ");
-            j++;
+            ++j;
         }
-
         printf("\n");
         ++i;
     }
 
     return 0;
 }
-
 
 
 

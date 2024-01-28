@@ -4,67 +4,40 @@ class Test
 {
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);
-
-        int rows;
+        int r;
         System.out.print("Enter the number of rows: ");
-        rows = sc.nextInt();
 
-        System.out.println();
+        Scanner sc = new Scanner(System.in);
+        r = sc.nextInt();
 
-        for (int i = 1; i <= rows; ++i)
+        int i = 1;
+        while (i <= r)
         {
-            for (int j = 1; j <= rows; ++j)
+            int j = 1;
+            while (j <= r)
             {
-                if (i + j > rows)
+                if (i <= j)
                 {
-                    System.out.print("* ");
-                }
+                    System.out.print("*");
 
+                }
                 else
                 {
-                    System.out.print("  ");
+                    System.out.print(" ");
                 }
+                ++j;
             }
-
             System.out.println();
+            ++i;
         }
 
-        // int i = 1;
-
-        // while (i <= rows)
-        // {
-        //     int j = 1;
-
-        //     while (j <= rows)
-        //     {
-        //         if (i + j > rows)
-        //         {
-        //             printf("* ");
-        //         }
-
-        //         else
-        //         {
-        //             printf("  ");
-        //         }
-
-        //         ++j;
-        //     }
-
-        //     printf("\n");
-        //     ++i;
-        // }
     }
 }
-
 /*
 
-Enter the number of rows: 5
-
-        *
-      * *
-    * * *
-  * * * *
-* * * * *
-
-*/
+***** 0
+ **** 1
+  *** 2
+   ** 3
+    * 4
+    */

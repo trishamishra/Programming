@@ -2,49 +2,61 @@
 
 int main(void)
 {
-    int rows;
+    int r;
     printf("Enter the number of rows: ");
-    scanf("%d", &rows);
+    scanf ("%d", &r);
 
-    int i = 1;
+    int y = 0;
 
-    while (i < rows)
+    while (y < r)
     {
+        // print y spaces;
+
+        int i = 1;
+
+        while (i <= y)
+        {
+            printf(" ");
+            ++i;
+        }
+
+        // print (r - y) stars;
+
         int j = 1;
 
-        while (j <= rows - i)
+        while (j <= r - y)
         {
-            printf("  ");
+            printf("*");
             ++j;
         }
 
-        //////////////////////////////////////////////////////////
-
-        j = 1;
-
-        while (j <= i)
-        {
-            printf("* ");
-            ++j;
-        }
-
-        //////////////////////////////////////////////////////////
-
+        // print newline
         printf("\n");
-        ++i;
+
+        ++y;
     }
 
     return 0;
+
 }
 
 /*
 
 Enter the number of rows: 5
+      y
+***** 0
+ **** 1
+  *** 2
+   ** 3
+    * 4
 
-        *
-      * *
-    * * *
-  * * * *
-* * * * *
 
+int y = 0;
+while (y < r){
+    print y space;
+    print (r - y) star;
+
+    print newline
+    ++y;
+}
 */
