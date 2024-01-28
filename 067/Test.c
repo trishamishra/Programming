@@ -21,7 +21,7 @@
 
 #include <stdio.h>
 
-int sum(int, int);
+int sum(int, int); //function prototype
 
 int main(void)
 {
@@ -30,12 +30,12 @@ int main(void)
     scanf("%d", &a);
     scanf("%d", &b);
 
-    printf("The sum is %d\n", sum(a, b));
+    printf("The sum is %d\n", sum(a, b)); // a and b (technically, the values of a and b) are arguments.
 
     return 0;
 }
 
-int sum(int x, int y)
+int sum(int x, int y) //x and y are parameters.
 {
     return x + y;
 }
